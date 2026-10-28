@@ -14,11 +14,14 @@ source "${BASE_DIR_PATH}/path-base.sh"
 source "${GEAR_DIR_PATH}/args-base.sh"
 
 
+
+
 ################################################################################
 ## Args / Model
 ################################################################################
 
 source "${GEAR_DIR_PATH}/args-model.sh"
+source "${GEAR_DIR_PATH}/args-model-pomelo.sh"
 
 
 ################################################################################
@@ -26,3 +29,4 @@ source "${GEAR_DIR_PATH}/args-model.sh"
 ################################################################################
 
 source "${GEAR_DIR_PATH}/path-model.sh"
+source "${GEAR_DIR_PATH}/path-model-pomelo.sh"
