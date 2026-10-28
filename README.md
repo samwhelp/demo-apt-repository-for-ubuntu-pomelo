@@ -18,8 +18,17 @@
 
 ## Subject
 
+* [Notice](#notice)
 * [Usage](#usage)
 * [Link](#link)
+
+
+
+
+## Notice
+
+* This Reop just simple PPA skeleton.
+* No `.deb` file is provided; you must download it yourself.
 
 
 
