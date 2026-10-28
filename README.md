@@ -20,6 +20,7 @@
 
 * [Notice](#notice)
 * [Usage](#usage)
+* [Howto](#howto)
 * [Link](#link)
 
 
@@ -27,7 +28,7 @@
 
 ## Notice
 
-* This Reop just simple PPA skeleton.
+* This repository just simple PPA skeleton.
 * No `.deb` file is provided; you must download it yourself.
 
 
@@ -63,6 +64,121 @@ Example:
 
 	$ make repo-update
 
+```
+
+
+
+
+## Howto
+
+
+### clone
+
+run
+
+``` sh
+git clone https://github.com/samwhelp/demo-apt-repository-for-ubuntu-pomelo
+```
+
+run
+
+``` ch
+cd demo-apt-repository-for-ubuntu-pomelo
+```
+
+
+### deb-update
+
+run
+
+``` sh
+./deb-update.sh
+```
+
+
+
+### prepare
+
+run
+
+``` sh
+make prepare
+```
+
+
+
+### gpg-setup
+
+run
+
+``` sh
+make gpg-setup
+```
+
+
+
+### repo-update
+
+run
+
+``` sh
+make repo-update
+```
+
+
+
+
+### install keyring-key
+
+run
+
+``` sh
+./keyring-key-install.sh
+```
+
+
+### install apt-soruces-list
+
+run
+
+``` sh
+./apt-sources-list-from-localhost-install.sh
+```
+
+
+### install php-cli
+
+run
+
+``` sh
+sudo apt install php-cli
+```
+
+
+### website serve
+
+run
+
+``` sh
+./website-serve.sh
+```
+
+
+### apt update
+
+run
+
+``` sh
+sudo apt update
+```
+
+
+### install Package: pomelo-*
+
+run
+
+``` sh
+sudo apt pomelo-*
 ```
 
 
