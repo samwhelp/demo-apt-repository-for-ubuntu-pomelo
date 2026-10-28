@@ -43,6 +43,10 @@ function sys_website_serve_by_python () {
 
 function sys_website_serve_by_php () {
 
+	##
+	## ## sudo apt-get install php-cli
+	##
+
 	local website_localhost_name="${WEBSITE_LOCALHOST_NAME}"
 	local website_localhost_port="${WEBSITE_LOCALHOST_PORT}"
 
