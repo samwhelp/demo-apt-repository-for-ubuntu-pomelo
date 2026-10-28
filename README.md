@@ -10,6 +10,8 @@
 | Link | GitHub |
 | ---- | ------ |
 | [demo-apt-repository-for-ubuntu-pomelo](https://samwhelp.github.io/demo-apt-repository-for-ubuntu-pomelo/) | [GitHub](https://github.com/samwhelp/demo-apt-repository-for-ubuntu-pomelo) |
+| [Pomelo Adjustment](https://samwhelp.github.io/pomelo-adjustment/) | [GitHub](https://github.com/samwhelp/pomelo-adjustment) |
+| [Pomelo Note](https://samwhelp.github.io/note-about-pomelo/) | [GitHub](https://github.com/samwhelp/note-about-pomelo) |
 
 
 
