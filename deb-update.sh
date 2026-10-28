@@ -34,6 +34,8 @@ source "${BASE_DIR_PATH}/init.sh"
 
 function sys_pomelo_deb_packages_file_sync () {
 
+	local pomelo_package_archive_extract_dir_path="${POMELO_PACKAGE_ARCHIVE_EXTRACT_DIR_PATH}"
+
 	local repo_dir_path="${REPO_DIR_PATH}"
 
 	echo "rm -rf ${repo_dir_path}/*.deb"
@@ -43,30 +45,41 @@ function sys_pomelo_deb_packages_file_sync () {
 	mkdir -p "${repo_dir_path}"
 
 
-	echo "deb copying..."
-	cp -f pomelo-0.34-ubuntu26.04/*.deb "${repo_dir_path}/"
+	echo ":: deb copying..."
+	cp -f "${pomelo_package_archive_extract_dir_path}"/*.deb "${repo_dir_path}/"
 
 	echo "done"
+
+	echo ":: Please run:"
+	echo
+	echo "make repo-update"
 }
 
 function sys_pomelo_deb_packages_file_update () {
 
-	echo "mkdir -p tmp"
-	mkdir -p tmp
+	local pomelo_port_dir_path="${POMELO_PORT_DIR_PATH}"
 
-	pushd "$(pwd)/tmp" > /dev/null
+	echo "mkdir -p ${pomelo_port_dir_path}"
+	mkdir -p "${pomelo_port_dir_path}"
 
-	pwd
 
-	echo "https://pomelo.fedora.tw/download/pomelo-0.34-ubuntu26.04-amd64.tar.gz"
-	wget -c "https://pomelo.fedora.tw/download/pomelo-0.34-ubuntu26.04-amd64.tar.gz"
 
-	echo "tar xf pomelo-0.34-ubuntu26.04-amd64.tar.gz"
-	tar xf pomelo-0.34-ubuntu26.04-amd64.tar.gz
+
+	pushd "${pomelo_port_dir_path}" > /dev/null
+
+	echo "${POMELO_PACKAGE_ARCHIVE_URL}"
+	wget -c "${POMELO_PACKAGE_ARCHIVE_URL}"
+
+	echo "tar xf ${POMELO_PACKAGE_ARCHIVE_FILE_NAME}"
+	tar xf "${POMELO_PACKAGE_ARCHIVE_FILE_NAME}"
 
 	sys_pomelo_deb_packages_file_sync
 
 	popd > /dev/null
+
+
+
+
 }
 
 
@@ -91,13 +104,10 @@ function model_deb_update () {
 
 	local repo_dir_path="${REPO_DIR_PATH}"
 
+	echo "mkdir -p ${repo_dir_path}"
 	mkdir -p "${repo_dir_path}"
 
-	#pushd "${repo_dir_path}" > /dev/null
-
 	module_deb_update
-
-	#popd > /dev/null
 
 }
 
