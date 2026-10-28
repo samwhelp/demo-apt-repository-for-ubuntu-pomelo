@@ -45,17 +45,28 @@ function sys_pomelo_deb_packages_file_sync () {
 	mkdir -p "${repo_dir_path}"
 
 
-	echo ":: deb copying..."
+	echo ":: deb copying ..."
 	cp -f "${pomelo_package_archive_extract_dir_path}"/*.deb "${repo_dir_path}/"
 
-	echo "done"
+	echo ":: done"
 
-	echo ":: Please run:"
+	echo
+	echo "##"
+	echo "## Please run:"
+	echo "##"
 	echo
 	echo "make repo-update"
+	echo
+
 }
 
 function sys_pomelo_deb_packages_file_update () {
+
+
+	local pomelo_package_archive_extract_dir_path="${POMELO_PACKAGE_ARCHIVE_EXTRACT_DIR_PATH}"
+
+
+
 
 	local pomelo_port_dir_path="${POMELO_PORT_DIR_PATH}"
 
@@ -67,11 +78,23 @@ function sys_pomelo_deb_packages_file_update () {
 
 	pushd "${pomelo_port_dir_path}" > /dev/null
 
-	echo "${POMELO_PACKAGE_ARCHIVE_URL}"
-	wget -c "${POMELO_PACKAGE_ARCHIVE_URL}"
+	if [[ -d "${pomelo_package_archive_extract_dir_path}" ]]; then
 
-	echo "tar xf ${POMELO_PACKAGE_ARCHIVE_FILE_NAME}"
-	tar xf "${POMELO_PACKAGE_ARCHIVE_FILE_NAME}"
+		echo
+		echo ":: Dir Exist: ${pomelo_package_archive_extract_dir_path}"
+		echo
+
+	else
+
+		echo "${POMELO_PACKAGE_ARCHIVE_URL}"
+		wget -c "${POMELO_PACKAGE_ARCHIVE_URL}"
+
+		echo "tar xf ${POMELO_PACKAGE_ARCHIVE_FILE_NAME}"
+		tar xf "${POMELO_PACKAGE_ARCHIVE_FILE_NAME}"
+
+	fi
+
+
 
 	sys_pomelo_deb_packages_file_sync
 
