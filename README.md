@@ -314,6 +314,11 @@ ubuntu
 
 ## Log
 
+* [log-install-packages](#log-install-packages)
+* [log-remove-packages](#log-remove-packages)
+* [log-install-pomelo-shell](#log-install-pomelo-shell)
+* [log-install-pomelo-desktop](#log-install-pomelo-desktop)
+
 
 ### log-install-packages
 
@@ -469,6 +474,80 @@ Summary:
 Continue? [Y/n]
 
 ```
+
+
+#### log-install-pomelo-shell
+
+run
+
+``` sh
+sudo apt install pomelo-shell
+```
+
+show
+
+```
+Installing:
+  pomelo-shell
+
+Installing dependencies:
+  brightness-udev        pomelo-display   pomelo-lock     pomelo-sound
+  brightnessctl          pomelo-edit      pomelo-network  pomelo-storage
+  libpomelo0             pomelo-files     pomelo-notify   pomelo-system
+  plocate                pomelo-input     pomelo-panel    pomelo-terminal
+  pomelo-assistant       pomelo-keyring   pomelo-polkit   pomelo-theme
+  pomelo-bluetooth       pomelo-language  pomelo-power    pomelo-wm
+  pomelo-control-center  pomelo-launcher  pomelo-session
+
+Summary:
+  Upgrading: 0, Installing: 28, Removing: 0, Not Upgrading: 1
+  Download size: 1,420 kB
+  Space needed: 5,548 kB / 53.1 GB available
+
+Continue? [Y/n]
+
+```
+
+
+#### log-install-pomelo-desktop
+
+run
+
+``` sh
+sudo apt install pomelo-desktop
+```
+
+show
+
+```
+Installing:
+  pomelo-desktop
+
+Installing dependencies:
+  brightness-udev       pomelo-control-center  pomelo-notify      pomelo-shell
+  brightnessctl         pomelo-display         pomelo-paint       pomelo-slides
+  libfreerdp-client3-3  pomelo-edit            pomelo-panel       pomelo-software
+  libfreerdp3-3         pomelo-files           pomelo-pdf         pomelo-sound
+  libgif7               pomelo-input           pomelo-player      pomelo-storage
+  libpomelo0            pomelo-keyring         pomelo-polkit      pomelo-system
+  libwinpr3-3           pomelo-language        pomelo-power       pomelo-terminal
+  plocate               pomelo-launcher        pomelo-remote      pomelo-theme
+  pomelo-assistant      pomelo-lock            pomelo-screenshot  pomelo-viewer
+  pomelo-bluetooth      pomelo-monitor         pomelo-session     pomelo-wm
+  pomelo-calc           pomelo-network         pomelo-sheet       pomelo-writer
+
+Suggested packages:
+  freerdp-x11
+
+Summary:
+  Upgrading: 0, Installing: 45, Removing: 0, Not Upgrading: 1
+  Download size: 3,825 kB
+  Space needed: 12.9 MB / 53.1 GB available
+
+Continue? [Y/n]
+
+```
+
 
 
 
