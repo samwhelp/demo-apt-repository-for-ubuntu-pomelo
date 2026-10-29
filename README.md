@@ -71,6 +71,19 @@ Example:
 
 ## Howto
 
+* [install git](#install-git)
+* [clone](#clone)
+* [deb-update](#deb-update)
+* [prepare](#prepare)
+* [gpg-setup](#gpg-setup)
+* [repo-update](#repo-update)
+* [install keyring-key](#install-keyring-key)
+* [install apt-soruces-list](#install-apt-soruces-list)
+* [install php-cli](#install-php-cli)
+* [website-serve](#website-serve)
+* [apt-update](#apt-update)
+* [install packages](#install-packages)
+
 
 ### install git
 
@@ -164,7 +177,7 @@ sudo apt install php-cli
 ```
 
 
-### website serve
+### website-serve
 
 run
 
@@ -173,7 +186,7 @@ run
 ```
 
 
-### apt update
+### apt-update
 
 run
 
@@ -182,7 +195,7 @@ sudo apt update
 ```
 
 
-### install Package: pomelo-*
+### install packages
 
 run
 
