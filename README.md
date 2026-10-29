@@ -72,6 +72,15 @@ Example:
 ## Howto
 
 
+### install git
+
+run
+
+``` sh
+sudo apt install git
+```
+
+
 ### clone
 
 run
