@@ -187,7 +187,7 @@ sudo apt update
 run
 
 ``` sh
-sudo apt pomelo-*
+sudo apt install pomelo-*
 ```
 
 
