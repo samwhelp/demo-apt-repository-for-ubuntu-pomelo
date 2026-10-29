@@ -28,7 +28,7 @@
 
 ## Notice
 
-* This repository just simple PPA skeleton.
+* This repository is just a simple PPA skeleton.
 * No `.deb` file is provided; you must download it yourself.
 
 
