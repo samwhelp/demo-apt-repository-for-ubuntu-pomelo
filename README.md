@@ -90,6 +90,7 @@ Example:
 * [website-serve](#website-serve)
 * [apt-update](#apt-update)
 * [install packages](#install-packages)
+* [remove packages](#remove-packages)
 
 
 ### install git
@@ -217,13 +218,28 @@ sudo apt install pomelo-*
 run
 
 ``` sh
-sudo apt-get install pomelo-shell
+sudo apt install pomelo-shell
 ```
 
 run
 
 ``` sh
-sudo apt-get install pomelo-desktop
+sudo apt install pomelo-desktop
+```
+
+
+### remove packages
+
+run
+
+``` sh
+sudo apt remove pomelo-*
+```
+
+or run
+
+``` sh
+sudo apt purge pomelo-*
 ```
 
 
@@ -297,6 +313,9 @@ ubuntu
 
 
 ## Log
+
+
+### log-install-packages
 
 run
 
@@ -375,6 +394,81 @@ Continue? [Y/n]
 
 ```
 
+
+### log-remove-packages
+
+run
+
+``` sh
+sudo apt remove pomelo-*
+```
+
+show
+
+```
+Note, selecting 'pomelo-calc' for glob 'pomelo-*'
+Note, selecting 'pomelo-power' for glob 'pomelo-*'
+Note, selecting 'pomelo-storage' for glob 'pomelo-*'
+Note, selecting 'pomelo-terminal' for glob 'pomelo-*'
+Note, selecting 'pomelo-sound' for glob 'pomelo-*'
+Note, selecting 'pomelo-pdf' for glob 'pomelo-*'
+Note, selecting 'pomelo-network' for glob 'pomelo-*'
+Note, selecting 'pomelo-control-center' for glob 'pomelo-*'
+Note, selecting 'pomelo-screenshot' for glob 'pomelo-*'
+Note, selecting 'pomelo-launcher' for glob 'pomelo-*'
+Note, selecting 'pomelo-notify' for glob 'pomelo-*'
+Note, selecting 'pomelo-dm' for glob 'pomelo-*'
+Note, selecting 'pomelo-wm' for glob 'pomelo-*'
+Note, selecting 'pomelo-monitor' for glob 'pomelo-*'
+Note, selecting 'pomelo-software' for glob 'pomelo-*'
+Note, selecting 'pomelo-edit' for glob 'pomelo-*'
+Note, selecting 'pomelo-paint' for glob 'pomelo-*'
+Note, selecting 'pomelo-keyring' for glob 'pomelo-*'
+Note, selecting 'pomelo-slides' for glob 'pomelo-*'
+Note, selecting 'pomelo-assistant' for glob 'pomelo-*'
+Note, selecting 'pomelo-panel' for glob 'pomelo-*'
+Note, selecting 'pomelo-desktop' for glob 'pomelo-*'
+Note, selecting 'pomelo-greeter' for glob 'pomelo-*'
+Note, selecting 'pomelo-display' for glob 'pomelo-*'
+Note, selecting 'pomelo-files' for glob 'pomelo-*'
+Note, selecting 'pomelo-input' for glob 'pomelo-*'
+Note, selecting 'pomelo-bluetooth' for glob 'pomelo-*'
+Note, selecting 'pomelo-session' for glob 'pomelo-*'
+Note, selecting 'pomelo-lock' for glob 'pomelo-*'
+Note, selecting 'pomelo-system' for glob 'pomelo-*'
+Note, selecting 'pomelo-sheet' for glob 'pomelo-*'
+Note, selecting 'pomelo-shell' for glob 'pomelo-*'
+Note, selecting 'pomelo-theme' for glob 'pomelo-*'
+Note, selecting 'pomelo-viewer' for glob 'pomelo-*'
+Note, selecting 'pomelo-writer' for glob 'pomelo-*'
+Note, selecting 'pomelo-player' for glob 'pomelo-*'
+Note, selecting 'pomelo-remote' for glob 'pomelo-*'
+Note, selecting 'pomelo-polkit' for glob 'pomelo-*'
+Note, selecting 'pomelo-language' for glob 'pomelo-*'
+The following packages were automatically installed and are no longer required:
+  brightness-udev  libfreerdp-client3-3  libgif7     libwinpr3-3
+  brightnessctl    libfreerdp3-3         libpomelo0  plocate
+Use 'sudo apt autoremove' to remove them.
+
+REMOVING:
+  pomelo-assistant       pomelo-input     pomelo-pdf         pomelo-software
+  pomelo-bluetooth       pomelo-keyring   pomelo-player      pomelo-sound
+  pomelo-calc            pomelo-language  pomelo-polkit      pomelo-storage
+  pomelo-control-center  pomelo-launcher  pomelo-power       pomelo-system
+  pomelo-desktop         pomelo-lock      pomelo-remote      pomelo-terminal
+  pomelo-display         pomelo-monitor   pomelo-screenshot  pomelo-theme
+  pomelo-dm              pomelo-network   pomelo-session     pomelo-viewer
+  pomelo-edit            pomelo-notify    pomelo-sheet       pomelo-wm
+  pomelo-files           pomelo-paint     pomelo-shell       pomelo-writer
+  pomelo-greeter         pomelo-panel     pomelo-slides
+
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 39, Not Upgrading: 1
+  Freed space: 5,960 kB
+
+Continue? [Y/n]
+
+```
 
 
 
