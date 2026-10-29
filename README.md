@@ -592,6 +592,15 @@ Continue? [Y/n]
 ```
 
 
+### log-remove-libpomelo
+
+run
+
+``` sh
+sudo apt-get purge libpomelo*
+```
+
+
 
 
 ## Link
