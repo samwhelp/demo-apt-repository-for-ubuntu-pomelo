@@ -318,6 +318,7 @@ ubuntu
 * [log-remove-packages](#log-remove-packages)
 * [log-install-pomelo-shell](#log-install-pomelo-shell)
 * [log-install-pomelo-desktop](#log-install-pomelo-desktop)
+* [log-install-libpomelo-dev](#log-install-libpomelo-dev)
 
 
 ### log-install-packages
@@ -546,6 +547,48 @@ Summary:
 
 Continue? [Y/n]
 
+```
+
+
+### log-install-libpomelo-dev
+
+run
+
+``` sh
+sudo apt install libpomelo-dev
+```
+
+show
+
+```
+Installing:
+  libpomelo-dev
+
+Installing dependencies:
+  bzip2-doc           libglib2.0-dev      libpng-tools              libxrandr-dev
+  girepository-tools  libglib2.0-dev-bin  libselinux-dev            libxrender-dev
+  libblkid-dev        libice-dev          libsepol-dev              native-architecture
+  libbrotli-dev       libjpeg-dev         libsm-dev                 pkgconf
+  libbz2-dev          libjpeg-turbo8-dev  libsysprof-capture-4-dev  pkgconf-bin
+  libcairo2-dev       libjpeg8-dev        libx11-dev                uuid-dev
+  libexpat1-dev       libmount-dev        libxau-dev                x11proto-dev
+  libffi-dev          libpcre2-dev        libxcb-render0-dev        xorg-sgml-doctools
+  libfontconfig-dev   libpcre2-posix3     libxcb-shm0-dev           xtrans-dev
+  libfreetype-dev     libpixman-1-dev     libxcb1-dev               zlib1g-dev
+  libgio-2.0-dev      libpkgconf7         libxdmcp-dev
+  libgio-2.0-dev-bin  libpng-dev          libxext-dev
+
+Suggested packages:
+  libcairo2-doc        libglib2.0-doc        libice-doc  libxcb-doc
+  freetype2-doc        libgdk-pixbuf2.0-bin  libsm-doc   libxext-doc
+  gir1.2-glib-2.0-dev  libxml2-utils         libx11-doc
+
+Summary:
+  Upgrading: 0, Installing: 47, Removing: 0, Not Upgrading: 1
+  Download size: 9,171 kB
+  Space needed: 36.2 MB / 52.9 GB available
+
+Continue? [Y/n]
 ```
 
 
