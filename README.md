@@ -204,10 +204,26 @@ sudo apt update
 
 ### install packages
 
+
+
 run
 
 ``` sh
 sudo apt install pomelo-*
+```
+
+> install metapackage
+
+run
+
+``` sh
+sudo apt-get install pomelo-shell
+```
+
+run
+
+``` sh
+sudo apt-get install pomelo-desktop
 ```
 
 
