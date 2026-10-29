@@ -21,6 +21,7 @@
 * [Notice](#notice)
 * [Usage](#usage)
 * [Howto](#howto)
+* [Result](#result)
 * [Link](#link)
 
 
@@ -206,6 +207,73 @@ run
 
 ``` sh
 sudo apt install pomelo-*
+```
+
+
+
+
+## Result
+
+run
+
+``` sh
+tree ubuntu
+```
+
+show
+
+```
+ubuntu
+├── InRelease
+├── key.asc
+├── libpomelo0_0.34+ubuntu26.04_amd64.deb
+├── libpomelo-dev_0.34+ubuntu26.04_amd64.deb
+├── Packages
+├── Packages.gz
+├── pomelo-assistant_0.34+ubuntu26.04_amd64.deb
+├── pomelo-bluetooth_0.34+ubuntu26.04_amd64.deb
+├── pomelo-calc_0.34+ubuntu26.04_amd64.deb
+├── pomelo-control-center_0.34+ubuntu26.04_amd64.deb
+├── pomelo-desktop_0.34+ubuntu26.04_all.deb
+├── pomelo-display_0.34+ubuntu26.04_amd64.deb
+├── pomelo-dm_0.34+ubuntu26.04_amd64.deb
+├── pomelo-edit_0.34+ubuntu26.04_amd64.deb
+├── pomelo-files_0.34+ubuntu26.04_amd64.deb
+├── pomelo-greeter_0.34+ubuntu26.04_amd64.deb
+├── pomelo-input_0.34+ubuntu26.04_amd64.deb
+├── pomelo-keyring_0.34+ubuntu26.04_amd64.deb
+├── pomelo-language_0.34+ubuntu26.04_amd64.deb
+├── pomelo-launcher_0.34+ubuntu26.04_amd64.deb
+├── pomelo-lock_0.34+ubuntu26.04_amd64.deb
+├── pomelo-monitor_0.34+ubuntu26.04_amd64.deb
+├── pomelo-network_0.34+ubuntu26.04_amd64.deb
+├── pomelo-notify_0.34+ubuntu26.04_amd64.deb
+├── pomelo-paint_0.34+ubuntu26.04_amd64.deb
+├── pomelo-panel_0.34+ubuntu26.04_amd64.deb
+├── pomelo-pdf_0.34+ubuntu26.04_amd64.deb
+├── pomelo-player_0.34+ubuntu26.04_amd64.deb
+├── pomelo-polkit_0.34+ubuntu26.04_amd64.deb
+├── pomelo-power_0.34+ubuntu26.04_amd64.deb
+├── pomelo-remote_0.34+ubuntu26.04_amd64.deb
+├── pomelo-screenshot_0.34+ubuntu26.04_amd64.deb
+├── pomelo-session_0.34+ubuntu26.04_amd64.deb
+├── pomelo-sheet_0.34+ubuntu26.04_amd64.deb
+├── pomelo-shell_0.34+ubuntu26.04_all.deb
+├── pomelo-slides_0.34+ubuntu26.04_amd64.deb
+├── pomelo-software_0.34+ubuntu26.04_amd64.deb
+├── pomelo-sound_0.34+ubuntu26.04_amd64.deb
+├── pomelo-storage_0.34+ubuntu26.04_amd64.deb
+├── pomelo-system_0.34+ubuntu26.04_amd64.deb
+├── pomelo-terminal_0.34+ubuntu26.04_amd64.deb
+├── pomelo-theme_0.34+ubuntu26.04_amd64.deb
+├── pomelo-viewer_0.34+ubuntu26.04_amd64.deb
+├── pomelo-wm_0.34+ubuntu26.04_amd64.deb
+├── pomelo-writer_0.34+ubuntu26.04_amd64.deb
+├── Release
+└── Release.gpg
+
+1 directory, 47 files
+
 ```
 
 
