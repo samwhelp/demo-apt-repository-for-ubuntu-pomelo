@@ -39,7 +39,7 @@
 * [main usage / help](#main-usage--help)
 
 
-### main usage help
+### main usage / help
 
 run
 
